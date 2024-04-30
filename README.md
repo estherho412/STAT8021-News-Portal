@@ -9,7 +9,11 @@ This application demonstrates the question and answering of news using three met
 
 Here is the demo website:
 [Deployed Web App](http://stat8021newsdemo.azurewebsites.net) <br>
-username: stat8021 | pw: A++ <br>
+username: `stat8021` <br>
+password: `A++` <br>
+
+Here is the demo video:
+[Demo Video](https://vimeo.com/938652702?share=copy) <br>
 
 ## Initial Set Up
 **Navigate to RagAppDemo folder** <br>
