@@ -1,0 +1,22 @@
+# External API (Tavily) to search information online
+TAVILY_API_KEY: #Input your tavily api key
+
+# Azure OpenAI GPT3.5-TURBO
+DEPLOYMENT_NAME : #Input your model deployment name in Azure openai
+BASE_URL : #Input your Azure URL
+API_KEY : #Input your Azure openai api key
+API_VERSION: #Input your Azure openai version
+
+# Logging into langsmith
+LANGCHAIN_TRACING_V2: #boolean "true" to enable tracking
+LANGCHAIN_PROJECT: #your langchain project name
+LANGCHAIN_API_KEY: #your langchain api key
+
+# Qdrant Vector Store Config
+QDRANT_URL: #your qdrant database url
+QDRANT_API_KEY: #your qdrant api key
+
+# login for the Demo App
+credentials:
+  username: #your username for the RAG Demo App
+  password: #your password for the RAG Demo App

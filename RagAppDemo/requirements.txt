@@ -1,0 +1,12 @@
+langchain==0.1.13
+langchain-core==0.1.45
+langchain-community==0.0.34
+langchain-openai==0.0.5
+PyPDF2==3.0.1
+streamlit==1.24.1
+numpy==1.26.4
+unstructured==0.13.2
+tavily-python==0.3.3
+xmltodict
+qdrant-client==1.9.0
+argparse
