@@ -14,7 +14,7 @@ Please review the files in the following order:
 
 To run the code present in files 1 to 6 on a sample of the data
 
-## Problem Statement and Dataset
+## Introduction and Dataset
 To develop a Q&A model in a similar domain (news topics), we need to select an appropriate dataset. There are several common QA datasets available, including SQuAD, TriviaQA, NQ, QuAC, and NewsQA. Among these, we choose the NewsQA dataset for model fine-tuning due to its similarity to the target domain. The NewsQA dataset consists of 100,000 questions based on 10,000 CNN articles. It presents a challenge compared to other common datasets because it features longer paragraphs, and a significant proportion of questions do not have a direct answer within the corresponding article. Additionally, a greater proportion of questions in NewsQA require reasoning beyond simple word and context matching.
 
 ## Data Cleaning
