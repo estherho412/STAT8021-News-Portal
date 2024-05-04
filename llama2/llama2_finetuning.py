@@ -143,10 +143,3 @@ trainer = SFTTrainer(
 )
 trainer.train()
 trainer.model.save_pretrained(new_model)
-
-# Cell 4: Test the model
-logging.set_verbosity(logging.CRITICAL)
-prompt = f"[INST] <<SYS>>\n{system_message}\n<</SYS>>\n\nWrite a function that reverses a string. [/INST]" # replace the command here with something relevant to your task
-pipe = pipeline(task="text-generation", model=model, tokenizer=tokenizer, max_length=200)
-result = pipe(prompt)
-print(result[0]['generated_text'])
