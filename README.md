@@ -9,8 +9,8 @@ Please review the files in the following order:
 2. Data Cleaning.ipynb - Cleaning the data
 3. newsqa.py - Functions and classes for pre-processing the data and model training
 4. Advanced Modelling.ipynb - Data preparation and fine-tuining BERT and DistilBERT models
-5. XLNET QA.ipynb - Data preparation and fine-tuining XLNET models 
-6. SpanBert.ipynb - Data preparation and fine-tuining SpanBert models
+5. NewsQA_XLNET.ipynb - Data preparation and fine-tuining XLNET models 
+6. spanbert.ipynb - Data preparation and fine-tuining SpanBert models
 
 To run the code present in files 1 to 6 on a sample of the data
 
