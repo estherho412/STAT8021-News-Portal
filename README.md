@@ -1,3 +1,20 @@
+# STAT8021 Project - "Seamless News Discovery: Through News Classification, Question and Answering and RAG Integration"
+The project consist of three parts: 1) classification models for news classification, 2) question-and-answering (Q&A) function, and 3) Retrieval-Augmented Generation (RAG) technique and the ability to reason and act (ReAct) for Large Language Models (LLM)
+
+The objective of the project is to empower users to gain deeper understanding of news articles through queries. To further enhance the Q&A capabilities of the LLM, we aim to fine-tune the language model with human-annotated Q&A pairs on the NewsQA dataset.
+
+The project structure is as follows:
+1. News Classification - directory /NewsClassfication
+2. News Question and Answering - directory /NewsQA
+3. Retrieval-Augmented Generation (RAG) technique - directory /RagAppDemo
+4. (deprecated due to limited computational resource) llama2 finetuning using LoRa - directory /llama2
+
+Instructions are available at each of the directories to understand our work done.
+
+## News Classification
+We want to select the best model for news classification, fine-tuning, and downstream tasks. The models we selected include Naive Bayes Classifier (including Multinomial Naive Bayes and Complement Naive Bayes), Logistic Regression, Support Vector Classifier, BERT, DistilBERT, and XLNET. The dataset we used is the N24News dataset which contains 60,000 image-text pairs classified into 24 categories. We evaluate the models' performances through four evaluation metrics, Accuracy, Precision, Recall and F1 Score.
+
+
 # Question and Answering - NewsQA
 ** Before running any of the files, please run "pip install -r requirements.txt" **
 
@@ -17,8 +34,6 @@ To run the code present in files 1 to 6 on a sample of the data
 
 Here is the demo video: [Demo Video](https://youtu.be/I3ZkaD78Q4I) <be>
 
-## News Classification
-We want to select the best model for news classification, fine-tuning, and downstream tasks. The models we selected include Naive Bayes Classifier (including Multinomial Naive Bayes and Complement Naive Bayes), Logistic Regression, Support Vector Classifier, BERT, DistilBERT, and XLNET. The dataset we used is the N24News dataset which contains 60,000 image-text pairs classified into 24 categories. We evaluate the models' performances through four evaluation metrics, Accuracy, Precision, Recall and F1 Score.
 
 ## Q&A Dataset
 To develop a Q&A model in a similar domain (news topics), we need to select an appropriate dataset. There are several common QA datasets available, including SQuAD, TriviaQA, NQ, QuAC, and NewsQA. Among these, we choose the NewsQA dataset for model fine-tuning due to its similarity to the target domain. The NewsQA dataset from Microsoft consists of 100,000 questions based on 10,000 CNN articles. It presents a challenge compared to other common datasets because it features longer paragraphs, and a significant proportion of questions do not have a direct answer within the corresponding article. Additionally, a greater proportion of questions in NewsQA require reasoning beyond simple word and context matching.
