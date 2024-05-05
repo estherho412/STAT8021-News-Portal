@@ -14,9 +14,12 @@ Please review the files in the following order:
 
 To run the code present in files 1 to 6 on a sample of the data
 
-Here is the demo video: [Demo Video](https://youtu.be/I3ZkaD78Q4I) <br>
+Here is the demo video: [Demo Video](https://youtu.be/I3ZkaD78Q4I) <be>
 
-## Introduction and Dataset
+## News Classification
+We want to select the best model for news classification, fine-tuning, and downstream tasks. The models we selected include Naive Bayes Classifier (including Multinomial Naive Bayes and Complement Naive Bayes), Logistic Regression, Support Vector Classifier, BERT, DistilBERT, and XLNET. The dataset we used is the N24News dataset which contains 60,000 image-text pairs classified into 24 categories. We evaluate the models' performances through four evaluation metrics, Accuracy, Precision, Recall and F1 Score.
+
+## Q&A Dataset
 To develop a Q&A model in a similar domain (news topics), we need to select an appropriate dataset. There are several common QA datasets available, including SQuAD, TriviaQA, NQ, QuAC, and NewsQA. Among these, we choose the NewsQA dataset for model fine-tuning due to its similarity to the target domain. The NewsQA dataset consists of 100,000 questions based on 10,000 CNN articles. It presents a challenge compared to other common datasets because it features longer paragraphs, and a significant proportion of questions do not have a direct answer within the corresponding article. Additionally, a greater proportion of questions in NewsQA require reasoning beyond simple word and context matching.
 
 ## Data Cleaning
@@ -26,7 +29,10 @@ Within the dataset, there is a feature called “is_question_bad.” This featur
 For the Q&A task, we will first leverage the fine-tuned BERT, DistilBERT, and SpanBert models based on SQuAD as benchmarks. Subsequently, we’ll assess any improvements achieved by fine-tuning them with the NewQA dataset. Additionally, we will explore two alternative approaches, including Llama2 (Touvron, Hugo, et al., 2023), one of the generative pretrained transformer models, and XLNet (Yang et al., 2019), an extension of Transformer-XL.
 
 ## Evaluation Metrics
-F1 score: measures the word overlap between the correct answer and the predicted answer Accuracy: assesses whether the predicted answer and the actual answer have at least one overlapping token Exact Match: assesses whether the predicted answer is identical to the correct answer
+Accuracy: measures the proportion of all correctly classified instances out of all instances
+Precision: calculates the proportion of all true positives among all positive predictions, and assesses the accuracy of the model when it predicts a positive instance
+Recall: computes the proportion of true positive instances among all positive instances
+F1 score: measures the word overlap between the correct answer and the predicted answer
 
 # RAG Demo App
 
