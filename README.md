@@ -15,7 +15,7 @@ Instructions are available at each of the directories to understand our work don
 We want to select the best model for news classification, fine-tuning, and downstream tasks. The models we selected include Naive Bayes Classifier (including Multinomial Naive Bayes and Complement Naive Bayes), Logistic Regression, Support Vector Classifier, BERT, DistilBERT, and XLNET. The dataset we used is the N24News dataset which contains 60,000 image-text pairs classified into 24 categories. We evaluate the models' performances through four evaluation metrics, Accuracy, Precision, Recall and F1 Score.
 
 
-# Question and Answering - NewsQA
+## Question and Answering - NewsQA
 ** Before running any of the files, please run "pip install -r requirements.txt" **
 
 Please review the files in the following order:
