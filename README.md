@@ -10,7 +10,8 @@ Please review the files in the following order:
 3. newsqa.py - Functions and classes for pre-processing the data and model training
 4. Advanced Modelling.ipynb - Data preparation and fine-tuining BERT and DistilBERT models
 5. NewsQA_XLNET.ipynb - Data preparation and fine-tuining XLNET models 
-6. spanbert.ipynb - Data preparation and fine-tuining SpanBert models
+6. spanbert.py - Data preparation and fine-tuining SpanBert models
+7. (optional) llama2.py - data preparation, LoRa setup and finetuning of llama2 7B
 
 To run the code present in files 1 to 6 on a sample of the data
 
